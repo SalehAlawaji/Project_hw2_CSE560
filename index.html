@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- optimize the page for mobile devices -->
+	<title>Test title tag</title>
+	<meta name="author" content="Saleh Alawaji">
+	<meta name="robots"  content="noindex, nofollow">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="project-HW2 "> 
+	<meta  name="description" content="project-HW2, build html template">
+	
+
+<style>
+
+.collapsetable{
+		 border: 1px solid black;
+  	 border-collapse: collapse;
+}
+
+
+.collapsetable > table, .collapsetable > th, .collapsetable > td, .collapsetable > tbody, .collapsetable > tr{
+			border: 1px solid black;
+  	 border-collapse: collapse;
+}
+.center{
+    text-align:center;
+    width:100%;
+}
+.center > div, .center > table  {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+
+</head>
+
+<body>
+	<h1>Title</h1>
+	<B>Saleh Alawaji</B>, a.salehmansoura@wustl.edu
+	<hr><h2>Abstract:</h2>...<hr>
+
+	<h2><a id="toc"></a>Table of Contents:</h2>
+	<ul>
+		<li><a href="#intro">1. Introduction</a></li>
+		<li><a href="#sec2">2. SD-WAN Overview</a>
+			<ul>
+			<li><a href="#sec2_1">2.1 SD-WAN versus MPLS</a></li>
+			</ul>
+		</li>	
+		<li><a href="#sec3">3. References</a></li>
+	</ul>
+	<hr>	
+
+	<h2><a id="intro"></a>1. Introduction</h2>
+
+	<p>
+	A software-defined wide-area network (SD-WAN) uses software-defined network technology, such as communicating over the Internet using encryption between an organization's locations.[<a href="#sd-wan">SD-WAN - Wikipedia, n.d.</a>]</p>
+	<p>
+	If standard tunnel setup and configuration messages are supported by all of the network hardware vendors, SD-WAN simplifies the management and operation of a WAN by decoupling the networking hardware from its control mechanism. This concept is similar to how software-defined networking implements virtualization technology to improve data center management and operation. In practice, proprietary protocols like Cisco IoS are used to set up and manage an SD-WAN, meaning no decoupling of the hardware and its control mechanism. [<a href="#sd-wan">SD-WAN - Wikipedia, n.d.</a>]</p>	
+
+
+
+	<h2><a id="sec2"></a>2. SD-WAN Overview</h2>
+		<div class="center">
+		<figure>
+	  <img src="sdwan.png" alt="sdwan_figure" width="400" height="400">
+	  <figcaption><b>Fig.1 - SD-WAN overview. By <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a></b>, <a href="https://commons.wikimedia.org/w/index.php?curid=96220546">Link</a></figcaption>
+		</figure>
+		</div>
+
+	<h3><a id="sec2_1"></a>2.1 SD-WAN vs MPLS</h3>
+
+		<!-- second table --> 
+		<div class="center">
+			<table class="collapsetable">
+				 <caption style="caption-side:bottom"><b>Table 1: SD-WAN vs MPLS [<a href="#sdwanvsmpls">SD-WAN - Cisco, n.d.</a>] </b> </caption>
+				<thead>
+				<tr class="collapsetable">
+					<th >Parameter</th>
+					<th >MPLS</th>
+					<th >SDWAN</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr class="collapsetable">
+					<td>Connectivity options</td>
+					<td>Dual MPLS(active/backup)</td>
+					<td>typical combination of MPLS, broadband, and LTE</td>
+				</tr>
+				<tr class="collapsetable">
+					<td>Cloud Access</td>
+					<td>Backhaul to datacenter then to cloud </td>
+					<td>Direct access to cloud</td>
+				</tr>
+				<tr class="collapsetable">
+					<td>Quality</td>
+					<td>Dedicate connection, maintain high QoS </td>
+					<td>business policy define</td>
+				</tr>
+				<tr class="collapsetable">	
+					<td>Security</td>
+					<td>Dedicated line </td>
+					<td>embedded security</td>
+				</tr>
+				</tbody>
+			</table> 
+		</div>
+
+		<hr>
+	
+	<h2><a id="sec3"></a>References</h2>
+		<table>
+	      <tbody>
+	        <tr id="sd-wan" style="vertical-align: top;">
+	          <td>[SD-WAN - Wikipedia, n.d.]</td>
+	          <td>SD-WAN - Wikipedia. (n.d.). Wikipedia. Retrieved September 30, 2021, from  <a href="https://en.wikipedia.org/wiki/SD-WAN">https://en.wikipedia.org/wiki/SD-WAN</a></td>
+	        </tr>
+	        <tr id="sdwanvsmpls" style="vertical-align:top;">
+	        	<td>[SD-WAN - Cisco, n.d.]</td>
+	        	<td>What Is the Difference Between SD-WAN and MPLS? - Cisco. (n.d.). Cisco. Retrieved September 30, 2021, from <a href="https://www.cisco.com/c/en/us/products/routers/what-is-the-difference-between-sd-wan-and-mpls.html">https://www.cisco.com/c/en/us/products/routers/what-is-the-difference-between-sd-wan-and-mpls.html</a></td>
+	        </tr>
+	      </tbody>
+	    </table>  
+</body>
+</html>
